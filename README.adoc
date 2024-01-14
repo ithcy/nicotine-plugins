@@ -1,0 +1,23 @@
+= Nicotine+ Plugins
+:doctype: article
+:toclevels: 3
+:hide-uri-scheme:
+:icons: font
+:idprefix:
+:idseparator: -
+:source-language: shell
+ifndef::env-github[:icons: font]
+ifdef::env-github[]
+:status:
+:caution-caption: :fire:
+:important-caption: :exclamation:
+:note-caption: :information_source:
+:tip-caption: :bulb:
+:warning-caption: :warning:
+endif::[]
+
+== Install and activate plugins
+
+Copy plugin folder to Nicotine+ plugins folder
+
+In Nicotine+, open Preferences and go to Plugins. Activate desired plugin. Close and reopen Nicotine+, open Preferences. Select desired plugin and click Settings button.
