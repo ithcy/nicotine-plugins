@@ -45,15 +45,17 @@ class Plugin(BasePlugin):
                 'type': 'bool'}
         }
         self.resolved_users = {}
-        # pprint(config.sections["server"])
 
-    def user_resolve_notification(self, user, ip_address, port, country_code):
+    def user_resolve_notification(self, user, ip_address, port, country):
         if not user in self.resolved_users:
             self.resolved_users[user] = {
                 'ip_address': ip_address,
                 'port': port,
-                'country_code': country_code
+                'country': country
             }
+        elif country and self.resolved_users[user]['country'] != country:
+            self.resolved_users[user]['country'] = country
+
 
     def upload_queued_notification(self, user, virtualfile, realfile):
         try:
