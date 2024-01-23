@@ -1,0 +1,5 @@
+Version = "2024-01-13r00"
+Authors = ["ithcy"]
+Name = "WarNamer"
+Description = '''Changes Soulseek username to one randomly chosen from a user-defined list every time the plugin loads. (Every time Nicotine+ starts, or whenever the plugin is enabled in Nicotine+ preferences.)
+The minimum time between changes (in seconds) is configurable in the plugin settings. For example, set to 86400 to ensure the plugin doesn't change usernames more than once per day.'''
